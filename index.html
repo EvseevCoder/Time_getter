@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Live Time</title>
+    <script defer src="./time.js"></script>
 </head>
 <body>
-    <p style="color:#2e54bd">
-        <script src="main.js"></script>
-    </p>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --index: calc(1vh + 1vw);
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .block {
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            
+
+            display: flex;
+            justify-content: center;
+            font-size: calc(var(--index) * 5);
+        }
+    </style>
+
+    <div class="block">
+        <span></span>
+    </div>
+
 </body>
 </html>
